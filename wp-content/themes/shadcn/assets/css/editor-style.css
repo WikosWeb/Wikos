@@ -1,0 +1,71 @@
+/*
+ * Editor Styles for Shadcn WP Theme
+ * Styles applied in the block editor
+ */
+
+/* Import the same CSS variables as the frontend */
+:root {
+  --radius: 0.625rem;
+  --wp--preset--color--border: #e5e5e5;
+  --wp--preset--color--input: #e5e5e5;
+  --wp--preset--color--ring: #a1a1a1;
+  --wp--preset--color--sidebar: #fafafa;
+  --wp--preset--color--sidebar-foreground: #0a0a0a;
+  --wp--preset--color--sidebar-primary: #171717;
+  --wp--preset--color--sidebar-primary-foreground: #fafafa;
+  --wp--preset--color--sidebar-accent: #f5f5f5;
+  --wp--preset--color--sidebar-accent-foreground: #171717;
+  --wp--preset--color--sidebar-border: #e5e5e5;
+  --wp--preset--color--sidebar-ring: #a1a1a1;
+
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --default-transition-duration: 0.15s;
+}
+
+/* Editor wrapper */
+.editor-styles-wrapper {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+/* Button variants */
+.editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link {
+  background-color: transparent;
+  color: var(--wp--preset--color--primary);
+  border: 1px solid var(--wp--preset--color--border);
+}
+
+.editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--accent);
+  color: var(--wp--preset--color--accent-foreground);
+}
+
+.editor-styles-wrapper .wp-block-button.is-style-secondary .wp-block-button__link {
+  background-color: var(--wp--preset--color--secondary);
+  color: var(--wp--preset--color--secondary-foreground);
+}
+
+.editor-styles-wrapper .wp-block-button.is-style-secondary .wp-block-button__link:hover {
+  background-color: color-mix(in oklab,var(--wp--preset--color--secondary)80%,transparent);
+}
+
+.editor-styles-wrapper .wp-block-button.is-style-destructive .wp-block-button__link {
+  background-color: var(--wp--preset--color--destructive);
+  color: var(--wp--preset--color--destructive-foreground);
+}
+
+.editor-styles-wrapper .wp-block-button.is-style-destructive .wp-block-button__link:hover {
+  background-color: color-mix(in oklab,var(--wp--preset--color--destructive)90%,transparent);
+}
+
+.editor-styles-wrapper .wp-block-button.is-style-ghost .wp-block-button__link {
+  background-color: transparent;
+  color: var(--wp--preset--color--primary);
+}
+
+.editor-styles-wrapper .wp-block-button.is-style-ghost .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--accent);
+  color: var(--wp--preset--color--accent-foreground);
+}
